@@ -17,8 +17,20 @@ public class PlanetTest {
     }
 
     @Test
+    public void canChangeName(){
+        planet.setName("Jupiter");
+        assertEquals("Jupiter", planet.getName());
+    }
+
+    @Test
     public void hasSize(){
         assertEquals(98965, planet.getSize());
+    }
+
+    @Test
+    public void canChangeSize(){
+        planet.setSize(150000);
+        assertEquals(150000, planet.getSize());
     }
 
 }
